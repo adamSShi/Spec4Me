@@ -1,4 +1,4 @@
-# 🧩 新北 iMAP 系統需求與設計文件（工程導向最終版）
+# 🧩 新北 iMAP-即時資訊 系統需求與設計文件
 
 ---
 
@@ -229,33 +229,6 @@ flowchart TD
 | 學區資料 | TC_SchoolBlock | SchoolName | 學校名稱 | String |
 | 警局轄區 | TC_Police_UNIT | Alias | 機關名稱 | String |
 
----
-
-### 7.2 系統架構概要
-
-| 分層 | 技術 | 備註 |
-|------|--------|------|
-| 前端 | Vue 3 + Maplibre GL + TypeScript | 組件化開發，搭配 Pinia 狀態管理 |
-| 後端 | .NET 6 Web API + Dapper | 採用輕量 ORM 與多層架構 |
-| 資料庫 | SQL Server 2019 | 空間資料以 SDE 儲存 |
-| 圖台 | ArcGIS Server + REST Map Service | 提供地圖與空間分析能力 |
-| 部署環境 | Windows IIS（Production） / Docker（Dev） | CI/CD via GitHub Actions |
-
----
-
-## 📜 8. 版本歷程紀錄
-
-| 版次 | 更新日期 | 更新人員 | 更新說明 |
-|------|------------|------------|------------|
-| 1.0 | 2025/10/17 | 開發組 | 初版重構，依工程導向格式撰寫 |
-| 1.1 | （預留） | - | - |
-
----
-
-> 📘 **說明**  
-> - 本文件依據 IEEE SRS / SDD 標準格式撰寫，適用於開發、測試與後續維運。  
-> - 所有 API 金鑰與內部表結構資訊僅供內部參考，不得外流。  
-> - 本文件可作為後續自動化測試、API 文件、與系統架構圖生成之基礎資料來源。
 
 
 
