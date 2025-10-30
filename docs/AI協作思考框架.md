@@ -4,26 +4,7 @@
 
 在過去的 **DevOps** 時代，流程被拆分成需求、設計、開發、測試、部署等階段，  
 每個步驟都仰賴人工協作。
-```mermaid
-flowchart LR
-  A[Plan] --> B[Code]
-  B --> C[Build]
-  C --> D[Test]
-  D --> E[Release]
-  E --> F[Deploy]
-  F --> G[Operate]
-  G --> H[Monitor]
-  H --> A
-
-  style A fill:#cce5ff,stroke:#007bff
-  style B fill:#d4edda,stroke:#28a745
-  style C fill:#fff3cd,stroke:#ffc107
-  style D fill:#f8d7da,stroke:#dc3545
-  style E fill:#e2e3e5,stroke:#6c757d
-  style F fill:#d1ecf1,stroke:#17a2b8
-  style G fill:#fefefe,stroke:#adb5bd
-  style H fill:#f8f9fa,stroke:#adb5bd
-```
+![DevOps 流程圖](https://i0.wp.com/tw.alphacamp.co/wp-content/uploads/2023/09/DevOps.jpeg?resize=600%2C360&ssl=1)
 
 如今 **AI** 能夠在開發過程中即時參與、理解上下文、協助產生代碼與設計，  
 這意味著人與 AI 的合作不再是「分工」關係，而是「共思」關係。
