@@ -7,20 +7,18 @@
 > - 生成式 AI 正在重塑軟體開發流程  
 > - 從「規劃、撰寫程式、測試到部署」等階段全面自動化  
 > - 進入 **AI Agent（人工智慧協作代理）時代**
-[Hello Conference 官方網站]([https://helloai.tw](https://s.itho.me/ccms_slides/2025/10/29/437286bd-9911-4a23-9795-148b086f2aa4.pdf))
+[Hello Conference](https://s.itho.me/ccms_slides/2025/10/29/437286bd-9911-4a23-9795-148b086f2aa4.pdf)
 ---
 
 ### 🧭 工作型態轉變：從 DevOps 到 AI-CoDev
 
 過去漫長的 **DevOps 流程**，將會被精簡成三個部分：  
 **Plan & Design → Collaborate → Operation**
-```
 <table align="center">
   <tr>
     <td align="center" width="45%">
       <img src="https://i0.wp.com/tw.alphacamp.co/wp-content/uploads/2023/09/DevOps.jpeg?resize=600%2C360&ssl=1"
-           alt="傳統 DevOps 流程"
-           width="400"/>
+           alt="傳統 DevOps 流程" width="400"/>
       <p><b>傳統 DevOps 流程</b></p>
     </td>
 
@@ -29,22 +27,21 @@
     </td>
 
     <td align="center" width="45%">
-      <!-- 右邊是 Mermaid 圖 -->
-      ```mermaid
-      flowchart LR
-        A([🧠 Plan & Design]) --> B([🤝 Collaborate])
-        B --> C([⚙️ Operation])
-        C --> A
-
-        style A fill:#d8ebff,stroke:#007acc,stroke-width:2px,color:#000,font-weight:bold
-        style B fill:#c7f9cc,stroke:#00b894,stroke-width:2px,color:#000,font-weight:bold
-        style C fill:#fff3cd,stroke:#f4b400,stroke-width:2px,color:#000,font-weight:bold
-        linkStyle default stroke-width:2px,stroke:#777
-      ```
       <p><b>AI-CoDev 三階段循環</b></p>
     </td>
   </tr>
 </table>
+
+```mermaid
+flowchart LR
+  A([🧠 Plan & Design]) --> B([🤝 Collaborate])
+  B --> C([⚙️ Operation])
+  C --> A
+
+  style A fill:#d8ebff,stroke:#007acc,stroke-width:2px,color:#000,font-weight:bold
+  style B fill:#c7f9cc,stroke:#00b894,stroke-width:2px,color:#000,font-weight:bold
+  style C fill:#fff3cd,stroke:#f4b400,stroke-width:2px,color:#000,font-weight:bold
+  linkStyle default stroke-width:2px,stroke:#777
 ```
 
 這並非只是「統整」或「縮減流程」的表面變化。  
