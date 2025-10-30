@@ -1,6 +1,6 @@
-# 🤖 AI 協作思考框架（AI-CoDev Framework）
+# AI 協作思考框架（AI-CoDev Framework）
 
-## 🪞 前言：為什麼需要思考框架
+## 前言：為什麼需要思考框架
 
 在過去的 **DevOps** 時代，流程被拆分成需求、設計、開發、測試、部署等階段，  
 每個步驟都仰賴人工協作。
@@ -16,7 +16,7 @@
 
 ---
 
-## 🧱 新三階段架構：Plan & Design → Collaborate → Operation
+## 新三階段架構：Plan & Design → Collaborate → Operation
 
 ---
 ```mermaid
@@ -34,15 +34,15 @@ flowchart LR
   linkStyle default stroke-width:2px,stroke:#777
 ```
 
-### 🧠 Plan & Design — 思考與界定
+### Plan & Design — 思考與界定
 
 **核心目標：**  
 > 讓 AI 理解你的問題前，你必須先理解你自己。
 
-#### 🎯 目標  
+#### 目標  
 釐清「我想解決什麼問題？」
 
-#### ⚙️ 行動
+#### 行動
 
 - 明確定義輸入與輸出（*What’s the goal?*）  
 - 說出這是 **已知問題** 還是 **探索型問題**  
@@ -57,15 +57,15 @@ flowchart LR
 
 ---
 
-### 🤝 Collaborate — 共同生成與修正
+### Collaborate — 共同生成與修正
 
 **核心目標：**  
 > 讓 AI 成為你的 Pair Architect，而不是命令執行者。
 
-#### 🧩 思考方向
+#### 思考方向
 當你下 Prompt，不是「請幫我寫」，而是「請跟我思考」。
 
-#### 🧱 使用模板（Prompt Schema）
+#### 使用模板（Prompt Schema）
 - **目標**：想達成什麼？  
 - **背景**：現在的架構 / 使用情境？  
 - **限制**：必須保留 / 不能改動 / 技術選擇？  
@@ -74,30 +74,24 @@ flowchart LR
 - **例外**：邊界條件 / 潛在風險？  
 - **附件**：相關檔案或錯誤訊息  
 
-#### 📘 指引重點
+#### 指引重點
 
 - 把 **Prompt 視為一次「思考設計會議」**  
 - 每次與 AI 對話都要留痕跡（版本化思考 → *Prompt Log*）  
 - 持續對 AI 的回覆進行 **Prompt Refactoring**
-
-#### 💡 心法  
-> **Prompt 是你的第二個 IDE。**
-
+- 
 ---
 
-### ⚙️ Operation — 驗證與演化
+### Operation — 驗證與演化
 
 **核心目標：**  
 > 將 AI 輸出的成果帶回真實世界，並建立回饋迴圈。
 
-#### 📋 現階段 AI 可協助的任務：
+#### 現階段 AI 可協助的任務：
 
 - 產生自動化測試、log 分析、報錯解釋  
 - 協助快速定位問題來源與修復建議  
 - 在回饋中學習「哪類 Prompt 較有效」→ 建立 *Prompt Pattern Library*
-
-#### 💡 心法  
-> **Operation 不只是執行，而是學習。**
 
 ---
 
