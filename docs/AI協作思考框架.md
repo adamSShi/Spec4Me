@@ -104,7 +104,6 @@ AI加入工作流程代表一種思考模式的轉換：
 - 把 **Prompt 視為一次「思考設計會議」**  
 - 每次與 AI 對話都要留痕跡（版本化思考 → *Prompt Log*）  
 - 持續對 AI 的回覆進行 **Prompt Refactoring**
-- 
 ---
 
 ### Operation — 驗證與演化
