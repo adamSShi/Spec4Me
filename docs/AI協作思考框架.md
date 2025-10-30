@@ -12,14 +12,10 @@
 
 ### 🧭 工作型態轉變：從 DevOps 到 AI-CoDev
 
-過去漫長的 **DevOps 流程**，將會被精簡成三個部分：  
-**Plan & Design → Collaborate → Operation**
 ## 傳統 DevOps 流程
 
 ![DevOps 流程圖](https://i0.wp.com/tw.alphacamp.co/wp-content/uploads/2023/09/DevOps.jpeg?resize=600%2C360&ssl=1)
 <p align="center"><b>傳統 DevOps 流程</b></p>
-
----
 
 ## 演化為 AI-CoDev 三階段架構
 
@@ -36,7 +32,6 @@ flowchart LR
   style B fill:#c7f9cc,stroke:#00b894,stroke-width:2px,color:#000,font-weight:bold
   style C fill:#fff3cd,stroke:#f4b400,stroke-width:2px,color:#000,font-weight:bold
   linkStyle default stroke-width:2px,stroke:#777
-</div>
 ```
 
 這並非只是「統整」或「縮減流程」的表面變化。  
