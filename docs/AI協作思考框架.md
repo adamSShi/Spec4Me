@@ -13,7 +13,6 @@
 ## 傳統 DevOps 流程
 
 ![DevOps 流程圖](https://i0.wp.com/tw.alphacamp.co/wp-content/uploads/2023/09/DevOps.jpeg?resize=600%2C360&ssl=1)
-<p align="center"><b>傳統 DevOps 流程</b></p>
 
 ## 演化為 AI-CoDev 三階段架構
 
