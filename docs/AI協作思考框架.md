@@ -21,12 +21,17 @@
 ---
 ```mermaid
 flowchart LR
-  A[Plan & Design] --> B[Collaborate]
-  B --> C[Operation]
+  A([🧠 Plan & Design]) --> B([🤝 Collaborate])
+  B --> C([⚙️ Operation])
   C --> A
-  style A fill:#e2f3ff,stroke:#007acc
-  style B fill:#e6f7e6,stroke:#00b894
-  style C fill:#fff3cd,stroke:#f4b400
+
+  %% --- Node Style ---
+  style A fill:#d8ebff,stroke:#007acc,stroke-width:2px,color:#000,font-weight:bold
+  style B fill:#c7f9cc,stroke:#00b894,stroke-width:2px,color:#000,font-weight:bold
+  style C fill:#fff3cd,stroke:#f4b400,stroke-width:2px,color:#000,font-weight:bold
+
+  %% --- Link Style ---
+  linkStyle default stroke-width:2px,stroke:#777
 ```
 
 ### 🧠 Plan & Design — 思考與界定
