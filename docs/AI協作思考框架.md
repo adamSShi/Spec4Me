@@ -15,22 +15,36 @@
 過去漫長的 **DevOps 流程**，將會被精簡成三個部分：  
 **Plan & Design → Collaborate → Operation**
 
-<div align="center">
+<table align="center">
+  <tr>
+    <td align="center" width="45%">
+      <img src="https://i0.wp.com/tw.alphacamp.co/wp-content/uploads/2023/09/DevOps.jpeg?resize=600%2C360&ssl=1"
+           alt="傳統 DevOps 流程"
+           width="400"/>
+      <p><b>傳統 DevOps 流程</b></p>
+    </td>
 
-<img src="https://i0.wp.com/tw.alphacamp.co/wp-content/uploads/2023/09/DevOps.jpeg?resize=600%2C360&ssl=1" 
-     alt="DevOps 流程圖" width="600" height="360"/>
+    <td align="center" width="10%">
+      <h2>➡️</h2>
+    </td>
 
-```mermaid
-flowchart LR
-  A([🧠 Plan & Design]) --> B([🤝 Collaborate])
-  B --> C([⚙️ Operation])
-  C --> A
+    <td align="center" width="45%">
+      <!-- 右邊是 Mermaid 圖 -->
+      ```mermaid
+      flowchart LR
+        A([🧠 Plan & Design]) --> B([🤝 Collaborate])
+        B --> C([⚙️ Operation])
+        C --> A
 
-  style A fill:#d8ebff,stroke:#007acc,stroke-width:2px,color:#000,font-weight:bold
-  style B fill:#c7f9cc,stroke:#00b894,stroke-width:2px,color:#000,font-weight:bold
-  style C fill:#fff3cd,stroke:#f4b400,stroke-width:2px,color:#000,font-weight:bold
-  linkStyle default stroke-width:2px,stroke:#777
-```
+        style A fill:#d8ebff,stroke:#007acc,stroke-width:2px,color:#000,font-weight:bold
+        style B fill:#c7f9cc,stroke:#00b894,stroke-width:2px,color:#000,font-weight:bold
+        style C fill:#fff3cd,stroke:#f4b400,stroke-width:2px,color:#000,font-weight:bold
+        linkStyle default stroke-width:2px,stroke:#777
+      ```
+      <p><b>AI-CoDev 三階段循環</b></p>
+    </td>
+  </tr>
+</table>
 
 這並非只是「統整」或「縮減流程」的表面變化。  
 其背後的原因在於：傳統 DevOps 流程中，每一個階段仍需仰賴人工處理，  
