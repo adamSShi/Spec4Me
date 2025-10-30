@@ -14,7 +14,7 @@
 
 過去漫長的 **DevOps 流程**，將會被精簡成三個部分：  
 **Plan & Design → Collaborate → Operation**
-
+```
 <table align="center">
   <tr>
     <td align="center" width="45%">
@@ -45,6 +45,7 @@
     </td>
   </tr>
 </table>
+```
 
 這並非只是「統整」或「縮減流程」的表面變化。  
 其背後的原因在於：傳統 DevOps 流程中，每一個階段仍需仰賴人工處理，  
