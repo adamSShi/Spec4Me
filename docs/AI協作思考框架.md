@@ -23,6 +23,7 @@ flowchart LR
   style F fill:#d1ecf1,stroke:#17a2b8
   style G fill:#fefefe,stroke:#adb5bd
   style H fill:#f8f9fa,stroke:#adb5bd
+```
 
 如今 **AI** 能夠在開發過程中即時參與、理解上下文、協助產生代碼與設計，  
 這意味著人與 AI 的合作不再是「分工」關係，而是「共思」關係。
