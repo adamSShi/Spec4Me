@@ -10,11 +10,11 @@
 
 ### 🧭 工作型態轉變：從 DevOps 到 AI-CoDev
 
-## 傳統 DevOps 流程
+#### 傳統 DevOps 流程
 
 ![DevOps 流程圖](https://i0.wp.com/tw.alphacamp.co/wp-content/uploads/2023/09/DevOps.jpeg?resize=600%2C360&ssl=1)
 
-## 演化為 AI-CoDev 三階段架構
+#### 演化為 AI-CoDev 三階段架構
 
 ⬇️ DevOps 思維的演進，精簡為三個循環階段：  
 **Plan & Design → Collaborate → Operation**
@@ -42,7 +42,7 @@ AI 的加入打破了這一層邏輯，
 
 ---
 
-### 💡 新思維的出現
+## 💡 新思維的出現
 
 這代表一種思考模式的轉換：  
 > 「從線性開發流程 → 演化為思考驅動的 Prompt 循環。」
@@ -57,7 +57,7 @@ AI 的加入打破了這一層邏輯，
 
 ---
 
-## 新三階段架構：Plan & Design → Collaborate → Operation
+### 新三階段架構：Plan & Design → Collaborate → Operation
 
 ---
 
