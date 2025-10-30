@@ -37,7 +37,7 @@ flowchart LR
   style C fill:#fff3cd,stroke:#f4b400,stroke-width:2px,color:#000,font-weight:bold
   linkStyle default stroke-width:2px,stroke:#777
 </div>
-
+```
 
 這並非只是「統整」或「縮減流程」的表面變化。  
 其背後的原因在於：傳統 DevOps 流程中，每一個階段仍需仰賴人工處理，  
