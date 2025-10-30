@@ -19,6 +19,15 @@
 ## 🧱 新三階段架構：Plan & Design → Collaborate → Operation
 
 ---
+```mermaid
+flowchart LR
+  A[Plan & Design] --> B[Collaborate]
+  B --> C[Operation]
+  C --> A
+  style A fill:#e2f3ff,stroke:#007acc
+  style B fill:#e6f7e6,stroke:#00b894
+  style C fill:#fff3cd,stroke:#f4b400
+```
 
 ### 🧠 Plan & Design — 思考與界定
 
