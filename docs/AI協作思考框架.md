@@ -2,12 +2,10 @@
 
 ## 🚀 Hello Conference 啟發
 
-> **AI × DEV — 新時代的軟體開發浪潮**
->
-> - 生成式 AI 正在重塑軟體開發流程  
-> - 從「規劃、撰寫程式、測試到部署」等階段全面自動化  
-> - 進入 **AI Agent（人工智慧協作代理）時代**
-[Hello Conference](https://s.itho.me/ccms_slides/2025/10/29/437286bd-9911-4a23-9795-148b086f2aa4.pdf)
+> **GITHUB COPILOT 如何重構 DEVOPS**
+> - AGENTIC DEVOPS 時代降臨
+> - Presented By Duran Hsieh  
+> - [PTT](https://s.itho.me/ccms_slides/2025/10/29/437286bd-9911-4a23-9795-148b086f2aa4.pdf)
 ---
 
 ### 🧭 工作型態轉變：從 DevOps 到 AI-CoDev
