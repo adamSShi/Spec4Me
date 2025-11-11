@@ -25,29 +25,23 @@
   - Feature 元件只需關注自身視圖邏輯，與管理層鬆耦合。
 - **缺點**
   - 新增 UI 行為類型時需同步調整 `FeatureStateHandler`，需要額外維護成本。
-  - 單例管理需注意清除時機（例如測試或特殊頁面重整）。
 
 ## 使用說明
 - 在頁面或組件中呼叫 `const { handleFeatureState, currentFeatureId } = useFeatureManager()` 取得狀態與操作方法。
-- 透過 `FeatureHost.vue` 自動渲染 `currentFeatureComponent`，外部只需維護 `FeatureRegistry` 中的對應組件。
+- 透過 `FeatureHost.vue` 渲染 `currentFeatureComponent`，外部只需維護 `FeatureRegistry` 中的對應組件。
 - 若需手動關閉或暫存功能，直接呼叫 `closeFeature()`、`stashFeature()`。
 - 測試時可透過 `createFeatureManager()` 工廠函式建立獨立實例，避免與單例干擾。
 
 ## 擴充說明
-- 新增功能模組時在 `FeatureRegistry.ts` 擴充對應項目，並根據需求更新 `UIBehaviorTypes` 或 `FeatureStateHandler`。
-- 若需支援新的互動模式，可在 `UIBehaviorTypes` 新增枚舉值，並於 `FeatureStateHandler` 補上轉換邏輯。
+- 新增功能模組時在 `FeatureRegistry.ts` 擴充功能項目，並根據需求更新 `UIBehaviorTypes` 或 `FeatureStateHandler`。
+- 若需增加新的互動模式，可在 `UIBehaviorTypes` 新增Enum值，並於 `FeatureStateHandler` 補上邏輯。
 - 如日後需要跨頁共享不同組合的功能列表，可拆分 `FeatureRegistry` 為多份設定檔，再由 `useFeatureManager` 接收參數載入。
 
 ## 參考與實作細節
-- `useFeatureManager` 暴露的狀態與方法由 `FeatureHost.vue` 消費，並由 `Map.vue` 在按鈕操作時呼叫。
+- `useFeatureManager` 暴露的狀態與方法由 `FeatureHost.vue` 做顯示處理，並由 `Map.vue` 在按鈕操作時呼叫。
 - `FeatureStateHandler` 內部實作封裝行為轉換邏輯，保持 `useFeatureManager` 輕量。
 - 若未來功能數量增加，可在 `FeatureRegistry.ts` 內持續擴充而不影響既有邏輯。
 
 ## 替代方案
 - **集中式 Store（單一 Pinia store 管理所有功能）**：雖然可將狀態集中，但會混雜純邏輯與 UI 行為，當功能數增加時會造成 store 過於肥大，且不易拆測。
-- **Vue provide/inject 直接穿透狀態**：可以提供共享狀態，但會迫使子層組件直接操作狀態物件，缺乏像 `FeatureStateHandler` 這樣的行為抽象，難以維持一致的 UI 行為。
-
-## 後續工作
-- 若需要跨頁面重設狀態，應提供明確的重置 API。
-- 對 `FeatureStateHandler` 與 `useFeatureManager` 撰寫更細緻的單元測試，確保行為擴充時安全。
 
