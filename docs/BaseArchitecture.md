@@ -2,11 +2,6 @@
 
 ```
 src/
-├─ app/
-│  ├─ router/
-│  │  └─ index.ts
-│  └─ store/
-│     └─ index.ts          # 全域 / shared store 入口
 │
 ├─ shared/
 │  ├─ components/          # 純 UI（Button、Modal）
