@@ -9,35 +9,34 @@
 ```
 src/
 ├─ app/
-│  ├─ store/
+│  ├─ router/
 │  │  └─ index.ts
-│  └─ router/
-│     └─ index.ts
+│  └─ store/
+│     └─ index.ts          # 全域 / shared store 入口
+│
+├─ shared/
+│  ├─ components/          # 純 UI（Button、Modal）
+│  ├─ composables/         # 通用行為（usePagination）
+│  ├─ services/            # 高複雜度通用domain邏輯（AuthService）
+│  ├─ store/               # 全域狀態（auth, user, app）
+│  └─ types/               # 全域 type / enum
 │
 ├─ features/
 │  └─ todo/
-│     ├─ components/
+│     ├─ components/       # UI 元件
 │     │  └─ TodoList.vue
 │     │
-│     ├─ composables/
+│     ├─ composables/      # 主商業邏輯（預設寫這）
 │     │  └─ useTodo.ts
 │     │
-│     ├─ store/
+│     ├─ services/         # ❗當功能商業邏輯複雜度較高時才抽出
+│     │  └─ TodoDomain.ts
+│     │
+│     ├─ store/            # ❗ 原則上集中於shared層，非必要不出現在features中
 │     │  └─ todo.store.ts
 │     │
-│     ├─ services/
-│     │  └─ TodoService.ts
-│     │
-│     ├─ models/
-│     │  └─ Todo.ts
-│     │
-│     └─ index.ts
-│
-├─ shared/
-│  ├─ components/
-│  ├─ composables/
-│  ├─ services/
-│  └─ types/
+│     └─ models/           # type / interface / enum
+│        └─ Todo.ts
 │
 └─ main.ts
 ```
@@ -123,10 +122,12 @@ src/
 
 | 規則 | 說明 |
 |------|------|
-| ✔ | 可 import store |
-| ✔ | 可 import service / class |
+| ✔ | 可 import store / service / class |
+| ✔ | 功能流程 |
+| ✔ | API orchestration |
+| ✔ | 驗證邏輯及商業邏輯 |
+| ✔ | 狀態管理（ref / reactive） |
 | ❌ | 不被反向 import |
-| ❌ | 不寫純 domain 規則 |
 
 ---
 
@@ -169,11 +170,12 @@ src/
 
 | 規則 | 說明 |
 |------|------|
+| ✔ | 較複雜的演算法邏輯 |
+| ✔ | 可被單元測試 |
+| ✔ | 可被後端或其他前端共用 |
 | ❌ | 不 import Vue |
 | ❌ | 不 import store |
 | ❌ | 不 import composable |
-| ✔ | 可被單元測試 |
-| ✔ | 可被後端或其他前端共用 |
 
 ---
 
@@ -192,9 +194,9 @@ src/
 
 | 規則 | 說明 |
 |------|------|
-| ❌ | 不寫邏輯 |
 | ✔ | 可被所有層 import |
 | ✔ | 統一資料結構來源 |
+| ❌ | 不寫邏輯 |
 
 ---
 
@@ -267,11 +269,9 @@ src/
 .vue
  ↓
 composable
- ↓
-store
- ↓
-service / class
- ↓
+ ↙        ↘
+store    service
+ ↓          ↓
 type / interface
 ```
 
@@ -313,18 +313,4 @@ type / interface
 │                      資料結構定義                             │
 └─────────────────────────────────────────────────────────────┘
 ```
-
----
-
-## 快速檢查清單
-
-在撰寫或審查程式碼時，請確認：
-
-- [ ] `.vue` 元件是否只呼叫 composable，不直接操作 store 或呼叫 API？
-- [ ] `composable` 是否負責流程調度，而非商業規則？
-- [ ] `store` 是否只做狀態存取，不包含流程判斷？
-- [ ] `service` 是否與 Vue 無關，可獨立測試？
-- [ ] `models` 是否只定義結構，不包含任何邏輯？
-- [ ] 依賴方向是否符合規範（由上往下）？
-- [ ] 新功能是否放在獨立的 feature 資料夾內？
 
