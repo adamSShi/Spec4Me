@@ -11,19 +11,25 @@ src/
 │  └─ types/               # 全域 type / enum
 │
 ├─ features/
-│  └─ todo/
-│     ├─ components/       # UI 元件
-│     │  └─ TodoList.vue
-│     │
-│     ├─ composables/      # 主商業邏輯（預設寫這）
-│     │  └─ useTodo.ts
-│     │
-│     ├─ services/         # ❗當功能商業邏輯複雜度較高時才抽出
-│     │  └─ TodoDomain.ts
-│     │
-│     ├─ store/            # ❗ 原則上集中於shared層，非必要不出現在features中
-│     │  └─ todo.store.ts
-│     │
+│  └─ complexTodo/
+│  │  ├─ components/       # UI 元件
+│  │  │  └─ TodoList.vue
+│  │  │
+│  │  ├─ composables/      # 主商業邏輯（預設寫這）
+│  │  │  └─ useTodo.ts
+│  │  │
+│  │  ├─ services/         # ❗當功能商業邏輯複雜度較高時才抽出
+│  │  │  └─ TodoDomain.ts
+│  │  │
+│  │  ├─ store/            # ❗ 原則上集中於shared層，非必要不出現在features中
+│  │  │  └─ todo.store.ts
+│  │  │
+│  │  └─ models/           # type / interface / enum
+│  │     └─ Todo.ts
+│  │
+│  └─ simpleTodo/
+│     ├─ TodoList.vue      # UI 元件
+│     ├─ useTodo.ts        # 主商業邏輯（預設寫這）
 │     └─ models/           # type / interface / enum
 │        └─ Todo.ts
 │
